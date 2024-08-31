@@ -437,15 +437,15 @@ ul#nav li a:hover {
   position: relative;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
-
-  img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
 }
 
-.portfolio-item .portfolio-item-meta {
+.item-img {
+  width: 100%;
+  height: auto;
+  transition: opacity 0.3s ease;
+}
+
+.portfolio-item-meta {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -477,58 +477,64 @@ ul#nav li a:hover {
   text-shadow: 0 0 8px #81c784;
 }
 
-/* popup modal */
-.popup-modal {
-  max-width: 550px;
+/* Modal styles */
+.modal {
+  position: fixed; /* Fixe la modale au viewport */
+  top: 50%; /* Centre verticalement */
+  left: 50%; /* Centre horizontalement */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Ajuste le centrage pour qu'il soit exact */
+  width: 80%;
+  max-width: 900px;
+  padding: 20px;
   background: #fff;
-  position: relative;
-  margin: 0 auto;
-}
-.popup-modal .description-box {
-  padding: 12px 36px 18px 36px;
-}
-.popup-modal .description-box h4 {
-  font: 15px/24px 'opensans-bold', sans-serif;
-  margin-bottom: 12px;
-  color: #111;
-}
-.popup-modal .description-box p {
-  font: 14px/24px 'opensans-regular', sans-serif;
-  color: #a1a1a1;
-  margin-bottom: 12px;
-}
-.popup-modal .description-box .categories {
-  font: 11px/21px 'opensans-light', sans-serif;
-  color: #a1a1a1;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  display: block;
-  text-align: left;
-}
-.popup-modal .description-box .categories i {
-  margin-right: 8px;
-}
-.popup-modal .link-box {
-  padding: 18px 36px;
-  background: #111;
-  text-align: left;
-}
-.popup-modal .link-box a {
-  color: #fff;
-  font: 11px/21px 'opensans-bold', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  cursor: pointer;
-}
-.popup-modal a:hover {
-  color: #00cccc;
-}
-.popup-modal a.popup-modal-dismiss {
-  margin-left: 24px;
+  z-index: 1000; /* Assure que la modale est au-dessus du reste du contenu */
+  overflow: hidden; /* Evite le défilement de la modale */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajoute une ombre portée */
 }
 
-/* fadein/fadeout effect for modal popup
-/* ------------------------------------------------------------------ */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 500; /* Assure que l'overlay est derrière la modale mais devant le reste du contenu */
+}
+
+.modal-image {
+  width: 100%;
+  height: auto;
+}
+
+.close-btn,
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #333;
+  z-index: 1001; /* Assure que les boutons sont au-dessus de l'image */
+}
+
+.close-btn {
+  right: 10px;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 50px;
+}
 
 /* content at start */
 .mfp-fade.mfp-wrap .mfp-content .popup-modal {
