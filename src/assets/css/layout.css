@@ -406,7 +406,7 @@ ul#nav li a:hover {
 
 #portfolio {
   padding-top: 50px;
-  background: url(../images/portfolio-background.png);
+  background-image: url(../images/portfolio-background.png);
   background-repeat: no-repeat;
   background-size: cover;
 }

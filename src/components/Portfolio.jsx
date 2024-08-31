@@ -17,7 +17,7 @@ const Portfolio = ({ resumeData }) => {
               key={uuidv4()}
             >
               <img
-                src={`./src/assets/${item.imgurl}`}
+                src={`${import.meta.env.BASE_URL}src/assets/${item.imgurl}`}
                 className='item-img'
                 alt={item.name}
               />
