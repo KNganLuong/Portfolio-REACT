@@ -372,10 +372,11 @@
   }
 
   /* social links */
-  footer .social-links {
+  .social-links {
     font-size: 22px;
   }
-  footer .social-links li {
+
+  .social-links li {
     margin-left: 18px;
   }
 

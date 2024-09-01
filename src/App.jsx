@@ -1,8 +1,8 @@
 import Header from './components/Header'
 import About from './components/About'
 import Resume from './components/Resume'
-import Portfolio from './components/Portfolio'
-// import ContactUs from './components/ContactUs'
+import Portfolio from './components/Portfolio/index'
+
 import Footer from './components/Footer'
 import resumeData from './components/datas/resumeData'
 
@@ -13,7 +13,6 @@ function App() {
       <About resumeData={resumeData} />
       <Resume resumeData={resumeData} />
       <Portfolio resumeData={resumeData} />
-      {/* <ContactUs resumeData={resumeData} /> */}
       <Footer resumeData={resumeData} />
     </div>
   )

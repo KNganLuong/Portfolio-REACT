@@ -1,0 +1,34 @@
+@use '../base/colors' as colors;
+@use '../base/mixins' as mixins;
+
+.error_container {
+  text-align: center;
+  padding-bottom: 50px;
+
+  h1 {
+    color: colors.$alert;
+    font-size: 250px;
+    @include mixins.media-queries(colors.$mobile) {
+      font-size: 100px;
+    }
+  }
+
+  h2 {
+    color: colors.$alert;
+    font-weight: 500;
+    font-size: 36px;
+    height: 52px;
+    @include mixins.media-queries(colors.$mobile) {
+      font-size: 20px;
+      margin: 0 150px 50px 150px;
+    }
+  }
+
+  .error_page_link {
+    color: colors.$main;
+    text-decoration: underline;
+    &:hover {
+      color: colors.$alert;
+    }
+  }
+}

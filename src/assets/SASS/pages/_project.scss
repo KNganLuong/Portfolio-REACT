@@ -1,0 +1,107 @@
+@use '../base/colors' as colors;
+@use '../base/mixins' as mixins;
+
+.project-page {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  @include mixins.media-queries(colors.$mobile) {
+    gap: 0px;
+  }
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+.slideshow-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 90px 0px 90px;
+  @include mixins.media-queries(colors.$mobile) {
+    padding: 0 20px 0 20px;
+  }
+
+  .slideshow-pictures {
+    width: 100%;
+    height: 415px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 25px;
+    @include mixins.media-queries(colors.$mobile) {
+      height: 255px;
+    }
+  }
+
+  .arrow {
+    position: absolute;
+    background-color: colors.$gray;
+
+    @include mixins.media-queries(colors.$mobile) {
+      width: 30px;
+      height: 30px;
+    }
+
+    &:hover {
+      background-color: colors.$main;
+    }
+  }
+
+  .arrow-back {
+    left: 90px;
+    @include mixins.media-queries(colors.$mobile) {
+      left: 30px;
+    }
+  }
+  .arrow-forward {
+    right: 90px;
+    @include mixins.media-queries(colors.$mobile) {
+      right: 30px;
+    }
+  }
+
+  .numereting {
+    position: absolute;
+    display: flex;
+    bottom: 40px;
+    @include mixins.media-queries(colors.$mobile) {
+      display: none;
+    }
+  }
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 90px 0px 90px;
+  gap: 10px;
+  @include mixins.media-queries(colors.$mobile) {
+    padding: 0 20px 0 20px;
+  }
+
+  .project-description {
+    color: colors.$main;
+    font-size: 26px;
+    font-weight: 500;
+    text-align: justify;
+    @include mixins.media-queries(colors.$mobile) {
+      margin-block-start: 0em;
+      margin-block-end: 0em;
+    }
+  }
+
+  .project-langage {
+    color: colors.$dark;
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 20px;
+  }
+}

@@ -1,25 +1,15 @@
-/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 
 import React from 'react'
-import { v4 as uuidv4 } from 'uuid'
+import SocialLinks from './SocialLinks'
 
-const Footer = ({ resumeData }) => {
+const Footer = () => {
   return (
-    <footer>
+    <footer id='footer'>
       <div className='row'>
         <div className='twelve columns'>
-          <ul className='social-links'>
-            {resumeData.socialLinks &&
-              resumeData.socialLinks.map((item) => {
-                return (
-                  <li key={uuidv4()}>
-                    <a href={item.url}>
-                      <i className={item.className} />
-                    </a>
-                  </li>
-                )
-              })}
+          <ul>
+            <SocialLinks />
           </ul>
         </div>
         <div id='go-top'>
