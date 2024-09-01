@@ -43,7 +43,7 @@ let resumeData = {
       skillname: 'HTML5',
     },
     {
-      skillname: 'CSS',
+      skillname: 'CSS3',
     },
     {
       skillname: 'Reactjs',
@@ -51,11 +51,15 @@ let resumeData = {
     {
       skillname: 'Redux',
     },
+    {
+      skillname: 'Git',
+    },
   ],
   portfolio: [
     {
       name: 'Create a Travel Agency Homepage with HTML & CSS',
       description: 'Travel Agency Homepage',
+      langage: 'HTML5 + CSS3',
       imgurl: [
         'images/portfolio/project-1/project-1-Booki.png',
         'images/portfolio/project-1/project-1-Booki-1.png',
@@ -64,6 +68,7 @@ let resumeData = {
     {
       name: 'Improve the Interface of a Mobile Site with CSS animations',
       description: 'Mobile site with CSS animations',
+      langage: 'CSS + SASS',
       imgurl: [
         'images/portfolio/project-2/project-2-Oh-my-food.png',
         'images/portfolio/project-2/project-2-Oh-my-food-1.png',
@@ -74,6 +79,7 @@ let resumeData = {
     {
       name: 'Create a Dynamic Website using JavaScript',
       description: 'A website with JavaScript',
+      langage: '',
       imgurl: [
         'images/portfolio/project-4/project-4-ArchiWebos.png',
         'images/portfolio/project-4/project-4-ArchiWebos-1.png',
@@ -85,6 +91,7 @@ let resumeData = {
     {
       name: 'Build a Real Estate Rental Web App with React',
       description: 'First Steps with React',
+      langage: '',
       imgurl: [
         'images/portfolio/project-5/project-5-Kasa-1.png',
         'images/portfolio/project-5/project-5-Kasa-2.png',
@@ -95,6 +102,7 @@ let resumeData = {
     {
       name: 'Debug the Website of an Events Agency',
       description: 'Debug and complete the development of a one-page site',
+      langage: '',
       imgurl: [
         'images/portfolio/project-6/project-6-724-events.png',
         'images/portfolio/project-6/project-6-724-events-1.png',
@@ -106,6 +114,7 @@ let resumeData = {
       name: 'Implementing the front end of a banking app with React and Redux',
       description:
         'Using React and Redux to develop the front end of a banking application and Writing REST API calls',
+      langage: '',
       imgurl: [
         'images/portfolio/project-7/project-7-Argent-Bank-1.png',
         'images/portfolio/project-7/project-7-Argent-Bank-2.png',

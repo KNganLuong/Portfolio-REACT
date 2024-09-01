@@ -350,7 +350,7 @@ ul#nav li a:hover {
   }
 }
 
-.css,
+.css3,
 .html5 {
   width: 90%;
 
@@ -367,11 +367,11 @@ ul#nav li a:hover {
     width: 0%;
   }
   100% {
-    width: 55%;
+    width: 75%;
   }
 }
 .reactjs {
-  width: 55%;
+  width: 75%;
 
   animation: reactAnimation 2s ease;
 
@@ -386,11 +386,11 @@ ul#nav li a:hover {
     width: 0%;
   }
   100% {
-    width: 50%;
+    width: 60%;
   }
 }
 .redux {
-  width: 50%;
+  width: 60%;
 
   animation: reduxAnimation 2s ease;
 
@@ -400,6 +400,24 @@ ul#nav li a:hover {
   -ms-animation: reduxAnimation 2s ease;
 }
 
+@keyframes gitAnimation {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+.git {
+  width: 80%;
+
+  animation: gitAnimation 2s ease;
+
+  -moz-animation: gitAnimation 2s ease;
+  -webkit-animation: gitAnimation 2s ease;
+  -o-animation: gitAnimation 2s ease;
+  -ms-animation: gitAnimation 2s ease;
+}
 /* ------------------------------------------------------------------ */
 /* e. Portfolio Section
 /* ------------------------------------------------------------------ */
