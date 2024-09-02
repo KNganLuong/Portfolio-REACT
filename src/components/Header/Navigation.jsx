@@ -1,6 +1,23 @@
 import { HashLink } from 'react-router-hash-link'
+import { useEffect } from 'react'
 
 const NavigationBanner = () => {
+  useEffect(() => {
+    const handleScroll = () => {
+      const nav = document.getElementById('nav-wrap')
+      if (window.scrollY > 50) {
+        nav.classList.add('nav-scrolled')
+      } else {
+        nav.classList.remove('nav-scrolled')
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
   return (
     <nav id='nav-wrap'>
       <a className='mobile-btn' href='#nav-wrap' title='Show navigation'>

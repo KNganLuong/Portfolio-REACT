@@ -32,7 +32,8 @@
   .slideshow-pictures {
     object-fit: cover;
     object-position: center;
-    border-radius: 25px;
+    box-shadow: 0 0 4px #1b5e20;
+
     @include mixins.media-queries(colors.$mobile) {
       height: 255px;
     }
@@ -40,11 +41,14 @@
 
   .arrow {
     position: absolute;
-    background-color: colors.$gray;
+    background-color: #a5d6a7;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%px;
 
     @include mixins.media-queries(colors.$mobile) {
-      width: 30px;
-      height: 30px;
+      width: 10px;
+      height: 10px;
     }
 
     &:hover {
@@ -53,13 +57,13 @@
   }
 
   .arrow-back {
-    left: 90px;
+    left: 200px;
     @include mixins.media-queries(colors.$mobile) {
       left: 30px;
     }
   }
   .arrow-forward {
-    right: 90px;
+    right: 200px;
     @include mixins.media-queries(colors.$mobile) {
       right: 30px;
     }
