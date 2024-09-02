@@ -18,11 +18,7 @@ const About = ({ resumeData }) => {
         <div className='contact-details'>
           <h2>Contact Details</h2>
           <p className='address'>
-            <span>{resumeData.name}</span>
-            <br />
-            <span>{resumeData.address}</span>
-            <br />
-            <span>{resumeData.website}</span>
+            <a href={`mailto:${resumeData.email}`}>{resumeData.email}</a>
           </p>
         </div>
       </div>

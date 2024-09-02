@@ -1,6 +1,6 @@
 let resumeData = {
   linkedinId: ' kimngan-luong',
-
+  email: 'kngan.luong@gmail.com',
   socialLinks: [
     {
       name: 'linkedin',

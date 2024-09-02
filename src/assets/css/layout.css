@@ -178,7 +178,7 @@ ul#nav li a {
   -moz-transition: color 0.2s ease-in-out;
   -o-transition: color 0.2s ease-in-out;
   -ms-transition: color 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 
 ul#nav li a:active {
@@ -224,6 +224,14 @@ ul#nav li a:hover {
       line-height: 30px;
       color: #333;
       text-align: justify;
+
+      a {
+        color: #a5d6a7;
+      }
+
+      a:hover {
+        color: #1b5e20;
+      }
     }
   }
 }
