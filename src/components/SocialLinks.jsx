@@ -19,9 +19,7 @@ const SocialLinks = () => {
           target='_blank'
           rel='noopener noreferrer'
           aria-label={link.name}
-        >
-          {/* <span className='sr-only'>{link.name}</span> */}
-        </a>
+        />
       ))}
     </div>
   )

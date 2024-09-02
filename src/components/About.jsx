@@ -7,7 +7,7 @@ const About = ({ resumeData }) => {
     <section id='about' className='about-container'>
       <img
         className='profile-pic'
-        src='src/assets/images/profilepic.jpg'
+        src='images/profilepic.jpg'
         alt='picture profile'
       />
 

@@ -19,7 +19,7 @@ const Project = () => {
             <Slideshow imgUrl={project.imgUrl} />
             <ProjectContent
               projectDescription={project.description}
-              projectLangage={project.langage}
+              projectLangage={project.language}
             />
           </>
         )}
