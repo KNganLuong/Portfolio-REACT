@@ -8,6 +8,7 @@ export const projectData = {
       ],
       description: 'Travel Agency Homepage',
       language: ['HTML5', 'CSS3'],
+      lien: 'https://knganluong.github.io/Booki/',
     },
     {
       id: 2,
@@ -19,6 +20,7 @@ export const projectData = {
       ],
       description: 'Mobile site with CSS animations',
       language: ['HTML5', 'CSS3', 'SASS'],
+      lien: 'https://knganluong.github.io/Oh-my-food/',
     },
     {
       id: 3,
@@ -31,6 +33,7 @@ export const projectData = {
       ],
       description: 'A website with JavaScript',
       language: ['JavaScript'],
+      lien: 'https://github.com/KNganLuong/ArchiWebos',
     },
     {
       id: 4,
@@ -42,6 +45,7 @@ export const projectData = {
       ],
       description: 'First Steps with React',
       language: ['React', 'ReactRouter', 'Hooks', 'SASS'],
+      lien: 'https://github.com/KNganLuong/Kasa',
     },
     {
       id: 5,
@@ -53,6 +57,7 @@ export const projectData = {
       ],
       description: 'Debug and complete the development of a one-page site',
       language: ['JavaScript', 'React', 'Devtools'],
+      lien: 'https://github.com/KNganLuong/724events',
     },
     {
       id: 6,
@@ -60,10 +65,13 @@ export const projectData = {
         'images/portfolio/project-7/project-7-Argent-Bank-1.png',
         'images/portfolio/project-7/project-7-Argent-Bank-2.png',
         'images/portfolio/project-7/project-7-Argent-Bank-3.png',
+        'images/portfolio/project-7/project-7-Argent-Bank-4.png',
+        'images/portfolio/project-7/project-7-Argent-Bank-5.png',
       ],
       description:
         'Using React and Redux to develop the front end of a banking application and Writing REST API calls',
       language: ['React', 'Redux', 'Swagger'],
+      lien: 'https://github.com/KNganLuong/AgentBank',
     },
   ],
 }

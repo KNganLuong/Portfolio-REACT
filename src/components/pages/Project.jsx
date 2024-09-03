@@ -20,6 +20,7 @@ const Project = () => {
             <ProjectContent
               projectDescription={project.description}
               projectLangage={project.language}
+              projectUrl={project.lien}
             />
           </>
         )}

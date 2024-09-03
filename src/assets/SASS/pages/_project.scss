@@ -57,13 +57,13 @@
   }
 
   .arrow-back {
-    left: 200px;
+    left: 150px;
     @include mixins.media-queries(colors.$mobile) {
       left: 30px;
     }
   }
   .arrow-forward {
-    right: 200px;
+    right: 150px;
     @include mixins.media-queries(colors.$mobile) {
       right: 30px;
     }
@@ -87,7 +87,7 @@
   justify-content: center;
   align-items: center;
   padding: 0px 90px 50px 90px;
-  gap: 10px;
+  gap: 30px;
   @include mixins.media-queries(colors.$mobile) {
     padding: 0 20px 0 20px;
   }
@@ -96,7 +96,8 @@
     color: colors.$main;
     font-size: 26px;
     font-weight: 500;
-    text-align: justify;
+    text-align: center;
+    width: 60%;
     @include mixins.media-queries(colors.$mobile) {
       margin-block-start: 0em;
       margin-block-end: 0em;
@@ -113,7 +114,29 @@
       border-radius: 10px;
       font-size: 14px;
       font-weight: 700;
-      padding: 5px 35px;
+      padding: 5px 50px;
+    }
+  }
+  .project-lien {
+    background-color: colors.$gray;
+    color: colors.$white;
+    border-radius: 5px;
+    height: 100%;
+    padding: 10px 150px 10px 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+
+    font-size: 1.1rem;
+    border: 2px solid transparent;
+
+    &:hover {
+      background-color: colors.$main;
+      transform: translateY(-3px);
+    }
+    &:active {
+      border-color: colors.$alert;
     }
   }
 }

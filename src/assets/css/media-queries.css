@@ -58,17 +58,6 @@
     padding-right: 5%;
   }
 
-  /* Testimonials Section
-   ------------------------------------------------------------------- */
-  #testimonials .header-col h1:before {
-    font-size: 66px;
-    line-height: 66px;
-  }
-  #testimonials blockquote p {
-    font-size: 22px;
-    line-height: 46px;
-  }
-
   /* Call to Action Section
    ------------------------------------------------------------------- */
   #call-to-action .header-col h1:before {
