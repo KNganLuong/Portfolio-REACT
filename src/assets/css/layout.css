@@ -176,15 +176,13 @@ ul#nav li a:hover {
 .about-container {
   display: flex;
   background: #ffffff;
-  padding-top: 96px;
+  padding-top: 50px;
   overflow: hidden;
 
   .profile-pic {
-    /* position: relative; */
     width: 33%;
     object-fit: contain;
-    border-radius: 100%;
-    padding-left: 50px;
+    padding-left: 100px;
   }
 
   .about-content {
@@ -221,7 +219,7 @@ ul#nav li a:hover {
 
 #resume {
   background: #fff;
-  padding-top: 90px;
+  padding-top: 50px;
   overflow: hidden;
 }
 
