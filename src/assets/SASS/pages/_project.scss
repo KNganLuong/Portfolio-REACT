@@ -35,7 +35,7 @@
     box-shadow: 0 0 4px #1b5e20;
 
     @include mixins.media-queries(colors.$mobile) {
-      height: 255px;
+      height: auto;
     }
   }
 
@@ -45,6 +45,7 @@
     width: 30px;
     height: 30px;
     border-radius: 50%px;
+    cursor: pointer;
 
     @include mixins.media-queries(colors.$mobile) {
       width: 10px;
@@ -88,11 +89,12 @@
   align-items: center;
   padding: 0px 90px 50px 90px;
   gap: 30px;
+  border-color: #1b5e20;
   @include mixins.media-queries(colors.$mobile) {
     padding: 0 20px 0 20px;
   }
 
-  .project-description {
+  .project-title {
     color: colors.$main;
     font-size: 26px;
     font-weight: 500;
@@ -104,9 +106,16 @@
     }
   }
 
+  .project-description {
+    font-size: 20px;
+  }
+
   .project-language {
     display: flex;
     gap: 15px;
+    @include mixins.media-queries(colors.$mobile) {
+      flex-direction: column;
+    }
 
     .project-language-text {
       background-color: colors.$main;

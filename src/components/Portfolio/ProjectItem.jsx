@@ -7,7 +7,6 @@ const ProjectItem = ({ cover, title, id }) => {
   return (
     <Link to={`/project/${id}`} className='portfolio-item'>
       <img src={cover} className='item-img' alt={`${title} cover`} />
-
       <h5 className='portfolio-item-meta'>{title}</h5>
     </Link>
   )

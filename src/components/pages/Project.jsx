@@ -1,9 +1,10 @@
 import { useParams } from 'react-router-dom'
-import Footer from '../Footer'
+
 import NavigationBanner from '../Header/Navigation'
 import Slideshow from '../project/Slideshow'
 import ProjectContent from '../project/ProjectContent'
 import projectData from '../datas/projectData'
+import SocialLinks from '../SocialLinks'
 
 const Project = () => {
   const { id } = useParams()
@@ -18,6 +19,7 @@ const Project = () => {
           <>
             <Slideshow imgUrl={project.imgUrl} />
             <ProjectContent
+              projectTitle={project.title}
               projectDescription={project.description}
               projectLangage={project.language}
               projectUrl={project.lien}
@@ -25,7 +27,7 @@ const Project = () => {
           </>
         )}
       </main>
-      <Footer />
+      <SocialLinks />
     </>
   )
 }

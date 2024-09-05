@@ -2,7 +2,6 @@ header {
   position: relative;
   height: 70vh;
   min-height: 500px;
-  width: 100%;
 
   background-image: url(../images/header-background.png);
   background-repeat: no-repeat;
@@ -279,6 +278,7 @@ ul#nav li a:hover {
 .bars .skills {
   margin-top: 36px;
   list-style: none;
+  padding: 0;
 }
 .bars li {
   position: relative;

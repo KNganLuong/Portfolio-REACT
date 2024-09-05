@@ -210,17 +210,21 @@
   #about .profile-pic {
     display: none;
   }
-  #about .download .button {
+
+  #about .about-content {
     width: 100%;
-    text-align: center;
-    padding: 15px 20px;
   }
+
   #about .main-col {
     padding-right: 30px;
   }
 
   /* Resume Section
    --------------------------------------------------------------------- */
+  /* #resume {
+    width: 90%;
+  } */
+
   #resume .header-col {
     padding-top: 0;
     margin-bottom: 48px;
@@ -264,36 +268,18 @@
 
   /* Portfolio Section
    /* ----------------------------------------------------------------- */
-  #portfolio-wrapper .columns {
-    margin-bottom: 40px;
-  }
-  .popup-modal {
-    max-width: 85%;
+  #portfolio {
+    padding-top: 20px;
   }
 
-  /* Testimonials Section
-   ----------------------------------------------------------------------- */
-  #testimonials .text-container {
-    text-align: center;
+  #portfolio-wrapper {
+    margin-bottom: 40px;
+    padding: 20px;
   }
-  #testimonials h1 {
-    font: 16px/24px 'opensans-bold', sans-serif;
-    text-align: center;
-    margin-bottom: 30px;
-    text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
-  }
-  #testimonials h1 span {
-    display: block;
-  }
-  #testimonials .header-col h1:before {
-    content: none;
-  }
-  #testimonials blockquote {
-    padding-bottom: 24px;
-  }
-  #testimonials blockquote p {
-    font-size: 20px;
-    line-height: 42px;
+
+  .portfolio-item {
+    margin: 20px;
+    width: auto;
   }
 
   /* Control Nav */

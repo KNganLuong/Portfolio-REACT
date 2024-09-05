@@ -12,11 +12,6 @@ let resumeData = {
       url: 'https://github.com/KNganLuong',
       className: 'fa fa-github',
     },
-    {
-      name: 'X',
-      url: 'https://x.com/ChevrEllieuf',
-      className: 'fa fa-twitter',
-    },
   ],
   aboutme:
     'I am currently a pre-final year student at Open Classroom and pursuing React JavaScript Application Developer from here. I am a self taught Frontend Developer. I believe that to be successful in life, one needs to be obsessive with their dreams and keep working towards them.',

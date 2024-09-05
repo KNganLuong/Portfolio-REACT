@@ -4,10 +4,19 @@ import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
-const ProjectContent = ({ projectDescription, projectLangage, projectUrl }) => {
+const ProjectContent = ({
+  projectTitle,
+  projectDescription,
+  projectLangage,
+  projectUrl,
+}) => {
   return (
     <div className='project-content'>
-      <h2 className='project-description'>{projectDescription}</h2>
+      <h2 className='.project-title'>{projectTitle}</h2>
+      <span
+        className='project-description'
+        dangerouslySetInnerHTML={{ __html: projectDescription }}
+      ></span>
       <div className='project-language'>
         {projectLangage &&
           projectLangage.map((language) => (

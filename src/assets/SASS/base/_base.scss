@@ -2,22 +2,17 @@
 @use './mixins' as mixins;
 
 html {
-  margin: 50px;
-}
-
-* {
   margin: 0px;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 body {
+  width: 90%;
   display: block;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  padding: 0px 0px 0px 0px;
-  margin: 0;
+  padding: 00px;
+  margin: 0px;
   background-color: white;
   box-shadow: 0 0px 20px rgba(0, 128, 0, 0.2);
 }
