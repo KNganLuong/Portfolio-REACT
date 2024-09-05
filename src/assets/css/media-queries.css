@@ -58,6 +58,16 @@
     padding-right: 5%;
   }
 
+  /* Portfolio Section
+--------------------------------------------------------------------- */
+  #portfolio-wrapper {
+    padding: 50px;
+  }
+
+  .portfolio-item {
+    width: 35%;
+  }
+
   /* Call to Action Section
    ------------------------------------------------------------------- */
   #call-to-action .header-col h1:before {
